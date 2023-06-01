@@ -4,7 +4,7 @@ FROM Covid19Global.dbo.CovidDeaths
 ORDER BY 3,4
 
 SELECT *
-FROM Covid19Global.dbo.CovidVaccinations 
+FROM Covid19Global.dbo.CovidVaccinations   
 ORDER BY 3,4
 
 -- Select columns to work on 
