@@ -6,7 +6,7 @@ Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, 
 */
 
 Select *
-From PortfolioProject..CovidDeaths
+From Project..CovidDeaths
 Where continent is not null 
 order by 3,4
 
@@ -14,7 +14,7 @@ order by 3,4
 -- Select Data that we are going to be starting with
 
 Select Location, date, total_cases, new_cases, total_deaths, population
-From PortfolioProject..CovidDeaths
+From Project..CovidDeaths
 Where continent is not null 
 order by 1,2
 
@@ -23,7 +23,7 @@ order by 1,2
 -- Shows likelihood of dying if you contract covid in your country
 
 Select Location, date, total_cases,total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
-From PortfolioProject..CovidDeaths
+From Project..CovidDeaths
 Where location like '%states%'
 and continent is not null 
 order by 1,2
